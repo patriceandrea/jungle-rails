@@ -1,0 +1,16 @@
+<h4>Thank you for your order!</h4>
+    
+
+<% @order.line_items.each  do |item| %>
+
+  <p> <strong> Name </strong>: <%= item.product.name%> </p>
+  <p> <strong>Description</strong>:  <%= item.product.description%> </p>
+  <img src="<%= item.product.image%>" width="300" height="300" alt="Product Image" />
+  <p><strong>Quantity</strong>:  <%= item.quantity%> </p>
+  <p> <strong>Item Price total</strong>: $<%= item.product.price %> </p>
+
+
+ <%end%>  
+
+  <h1>Total: $<%= @order.total_cents/ 100.0 %> </h1>
+<h3> Confitmation Email will be sent at   <%= @order.email%> </h3>   
