@@ -7,10 +7,10 @@
   <p> <strong>Description</strong>:  <%= item.product.description%> </p>
   <img src="<%= item.product.image%>" width="300" height="300" alt="Product Image" />
   <p><strong>Quantity</strong>:  <%= item.quantity%> </p>
-  <p> <strong>Item Price total</strong>: $<%= item.product.price %> </p>
-
+  <p> <strong>Item Price</strong>: $<%= item.product.price %> </p>
+  <p> <strong>Price total</strong>: $<%= item.total_price_cents/ 100.0 %> </p>
 
  <%end%>  
 
-  <h1>Total: $<%= @order.total_cents/ 100.0 %> </h1>
+  <h1>Total amount: $<%= @order.total_cents/ 100.0 %> </h1>
 <h3> Confitmation Email will be sent at   <%= @order.email%> </h3>   
