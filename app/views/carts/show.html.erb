@@ -1,8 +1,8 @@
 <section class="cart-show">
-
   <header class="page-header">
     <h1>My Cart</h1>
   </header>
+
 <% if enhanced_cart.length === 0 %>
 
 <div class="alert alert-danger"> Cart is empty</div>
@@ -32,13 +32,12 @@
             TOTAL:
           </th>
           <th>
-            <%= cart_subtotal_cents / 100.0 %>
+            $<%= cart_subtotal_cents / 100.0 %>
           </th>
         </tr>
       </tfoot>
     </table>
   </div>
-
   <div class="row">
     <div class="col-xs-12">
       <%= form_tag orders_path do %>
@@ -55,7 +54,11 @@
       <% end %>
     </div>
   </div>
+<<<<<<< HEAD
 
   <%end%>
 
 </section>
+=======
+</section>
+>>>>>>> fix/money-formatting
