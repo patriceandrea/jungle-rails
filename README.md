@@ -2,7 +2,24 @@
 
 A mini e-commerce application built with Rails 6.1 for purposes of teaching Rails by example.
 
-## Setup
+### Main Page
+![alt text](/public/images/jungle-header.png)
+
+### Main Page - Products 
+![alt text](/public/images/jungle-homepage-product.png)
+
+### My Cart 
+![alt text](/public/images/jungle-cart.png)
+
+### Confirmation Order 
+![alt text](/public/images/junglr-confirmation2.png)
+
+#### Features implemented for the Jungle: 
+- **Sold Out Badge**: If a product has 0 quantity, a sold out badge is displayed. 
+- **Admin Categories**: Restful routes was created into the app where the admin can create a new category. 
+- **User Authentication**: User can sign up and login from any page of the app. 
+- **Order Details Page**: An Order confirmation page is created to display content of the product including the final amount of the order. 
+# Setup
 
 1. Run `bundle install` to install dependencies
 2. Create `config/database.yml` by copying `config/database.example.yml`
