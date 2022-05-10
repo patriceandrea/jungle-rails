@@ -19,7 +19,7 @@ A mini e-commerce application built with Rails 6.1 for purposes of teaching Rail
 - **Admin Categories**: Restful routes was created into the app where the admin can create a new category. 
 - **User Authentication**: User can sign up and login from any page of the app. 
 - **Order Details Page**: An Order confirmation page is created to display content of the product including the final amount of the order. 
-# Setup
+## Setup
 
 1. Run `bundle install` to install dependencies
 2. Create `config/database.yml` by copying `config/database.example.yml`
